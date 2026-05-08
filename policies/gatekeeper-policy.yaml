@@ -5,7 +5,13 @@ metadata:
   name: require-owner-label
 
 spec:
+  enforcementAction: deny
+
   match:
     kinds:
       - apiGroups: [""]
         kinds: ["Namespace"]
+
+  parameters:
+    labels:
+      - key: owner
