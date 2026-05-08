@@ -18,7 +18,7 @@ spec:
 
     spec:
       securityContext:
-          allowPrivilegeEscalation: false
+        allowPrivilegeEscalation: false
 
       containers:
       - name: nginx
